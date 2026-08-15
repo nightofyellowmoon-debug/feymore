@@ -1,0 +1,97 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shop | Rahi Da Fey</title>
+  <meta name="description" content="Shop official music products from Rahi Da Fey with add to cart checkout and bank deposit payment instructions.">
+  
+  
+  
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark">RF</span><span><strong>Rahi Da Fey</strong><small>Guitar Player & Songwriter</small></span></a>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="site-nav" aria-label="Primary navigation"><a href="index.html">Home</a><a href="menu.html">Menu</a><a href="albums.html">Albums</a><a href="shop.html">Shop</a><a href="news.html">News</a><a href="blog.html">Blog</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="privacy-policy.html">Privacy</a><a href="return-refund.html">Refund</a></nav>
+  </header>
+  <section class="top-slideshow" aria-label="Featured images slideshow"><img class="slideshow-image" src="assets/slides/slide-01.jpg" alt="Featured music artwork" data-slides="assets/slides/slide-01.jpg,assets/slides/slide-02.jpg,assets/slides/slide-03.jpg,assets/slides/slide-04.jpg,assets/slides/slide-05.jpg,assets/slides/slide-06.jpg,assets/slides/slide-07.jpg,assets/slides/slide-08.jpg,assets/slides/slide-09.jpg,assets/slides/slide-10.jpg,assets/slides/slide-11.jpg,assets/slides/slide-12.jpg"></section><main>
+    <section class="page-hero shop-hero-page">
+      <p class="eyebrow">Music Store</p>
+      <h1>Shop official releases</h1>
+      <p class="lead">Add items to cart, review the total, and prepare a secure bank-payment checkout message.</p>
+    </section>
+
+    <section class="section checkout-band">
+      <div>
+        <h2>Secure Bank Payment Gateway</h2>
+        <p>When an order is prepared, the customer receives the payment instructions and bank account details inside the checkout message.</p>
+      </div>
+      <div class="bank-card">
+        <strong>Checkout Privacy</strong>
+        <span>Bank details are provided only after the order is prepared.</span>
+        <span>Customers can then send the payment slip with their order details.</span>
+      </div>
+    </section>
+
+    <section class="section shop-layout">
+      <div>
+        <p class="eyebrow orange-text">Products</p>
+        <h2>Official music products</h2>
+        <div class="product-grid">
+          <article class="product-card" data-name="Best of Fey" data-price="9.99"><img src="assets/images/songs-1.jpg" alt="Best of Fey artwork"><h3>Best of Fey</h3><p>Digital album collection.</p><strong>$9.99</strong><button class="button primary add-cart" type="button">Add to cart</button></article>
+          <article class="product-card" data-name="Runes from a city" data-price="9.99"><img src="assets/images/songs-2.jpg" alt="Runes from a city artwork"><h3>Runes from a city</h3><p>Instrumental album.</p><strong>$9.99</strong><button class="button primary add-cart" type="button">Add to cart</button></article>
+          <article class="product-card" data-name="Sacred" data-price="9.99"><img src="assets/images/about.jpg" alt="Sacred artwork"><h3>Sacred</h3><p>Digital music release.</p><strong>$9.99</strong><button class="button primary add-cart" type="button">Add to cart</button></article>
+          <article class="product-card" data-name="To this earth, to this spiteful void" data-price="9.99"><img src="assets/slides/slide-10.jpg" alt="To this earth album artwork"><h3>To this earth, to this spiteful void</h3><p>Digital album.</p><strong>$9.99</strong><button class="button primary add-cart" type="button">Add to cart</button></article>
+          <article class="product-card" data-name="Tales # Whereabout" data-price="9.99"><img src="assets/images/news.jpg" alt="Tales Whereabout artwork"><h3>Tales # Whereabout</h3><p>Album download.</p><strong>$9.99</strong><button class="button primary add-cart" type="button">Add to cart</button></article>
+          <article class="product-card" data-name="Tales" data-price="9.99"><img src="assets/images/hero.jpg" alt="Tales artwork"><h3>Tales</h3><p>Digital album.</p><strong>$9.99</strong><button class="button primary add-cart" type="button">Add to cart</button></article>
+          <article class="product-card" data-name="Weary Sphere" data-price="9.99"><img src="assets/images/studio.jpg" alt="Weary Sphere artwork"><h3>Weary Sphere</h3><p>Digital release.</p><strong>$9.99</strong><button class="button primary add-cart" type="button">Add to cart</button></article>
+          <article class="product-card" data-name="For The Tears Of Eternity" data-price="9.99"><img src="assets/images/contact.jpg" alt="For The Tears Of Eternity artwork"><h3>For The Tears Of Eternity</h3><p>Album download.</p><strong>$9.99</strong><button class="button primary add-cart" type="button">Add to cart</button></article>
+          <article class="product-card" data-name="Lost in a distant region" data-price="9.99"><img src="assets/slides/slide-09.jpg" alt="Lost in a distant region artwork"><h3>Lost in a distant region</h3><p>Digital album.</p><strong>$9.99</strong><button class="button primary add-cart" type="button">Add to cart</button></article>
+          <article class="product-card" data-name="Huge city, Tenor / Evil" data-price="9.99"><img src="assets/images/songs-1.jpg" alt="Huge city Tenor artwork"><h3>Huge city, Tenor / Evil</h3><p>Combined digital release.</p><strong>$9.99</strong><button class="button primary add-cart" type="button">Add to cart</button></article>
+        </div>
+      </div>
+
+      <aside class="cart-panel" aria-live="polite">
+        <h2>Your Cart</h2>
+        <div id="cart-items" class="cart-items"><p class="empty-cart">No items added yet.</p></div>
+        <div class="cart-total"><span>Total</span><strong id="cart-total">$0.00</strong></div>
+        <div class="checkout-message" id="checkout-message">
+          Add items to cart to prepare your checkout message.
+        </div>
+        <button class="button primary" id="prepare-order" type="button">Prepare bank deposit order</button>
+        <form class="order-form" id="order-form" action="order-handler.php" accept-charset="UTF-8" method="post">
+          <input type="hidden" name="payment_message" value="In order to maintain transparency with norms and ensure a secure purchasing process, we have made arrangements for your payment to be received through this bank account in a manner that is convenient for you.">
+          <input type="hidden" name="payment_details" value="Account Name: Md Ahsan Habib; Account Number: 0202220008114; Bank: Dhaka Bank PLC; Branch: CDA Avenue; Routing Number: 085151482; Swift Code: DHBLBDDH">
+          <label>Name<input name="customer_name" type="text" autocomplete="name" required></label>
+          <label>Email<input name="customer_email" type="email" autocomplete="email" required></label>
+          <label>Phone<input name="customer_phone" type="tel" autocomplete="tel"></label>
+          <input type="hidden" name="order_items" id="order-items-field">
+          <input type="hidden" name="order_total" id="order-total-field">
+          <button class="button secondary dark" id="email-order" type="submit">Email order</button>
+        </form>
+      </aside>
+    </section>
+
+    <section class="section policy-copy">
+      <h2>How checkout works</h2>
+      <ol>
+        <li>Add your desired albums to the cart.</li>
+        <li>Prepare the order to receive the bank payment instructions.</li>
+        <li>Email the payment slip to <span>holklonote@gmail.com</span>.</li>
+        <li>Your order will be confirmed after payment verification.</li>
+      </ol>
+      <p><a href="return-refund.html">Read the Return & Refund Policy</a> before ordering.</p>
+    </section>
+  </main>
+  <footer class="site-footer"><p>Rahi Da Fey | Shop</p><p><a href="privacy-policy.html">Privacy Policy</a> <a href="return-refund.html">Return & Refund</a></p></footer>
+  <script src="assets/script.js"></script>
+</body>
+</html>
+
+
+
+
+
+

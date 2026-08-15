@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blog Archive | Rahi Da Fey</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark">RF</span><span><strong>Rahi Da Fey</strong><small>Guitar Player & Songwriter</small></span></a>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="index.html">Home</a><a href="menu.html">Menu</a><a href="albums.html">Albums</a><a href="shop.html">Shop</a><a href="news.html">News</a><a href="blog.html">Blog</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="privacy-policy.html">Privacy</a><a href="return-refund.html">Refund</a>
+    </nav>
+  </header>
+  <main>
+    <section class="section">
+      <h1>Blog Archive</h1>
+      <div class="blog-archive">
+        <article class="archive-post">
+          <h2><a href="blog-post-1.html">Studio Session: Neoclassical Guitar Techniques</a></h2>
+          <p class="post-meta">Published: January 2026</p>
+          <p>Exploring advanced neoclassical phrasing and arpeggio patterns...</p>
+        </article>
+        <article class="archive-post">
+          <h2><a href="blog-post-2.html">New Album in Progress</a></h2>
+          <p class="post-meta">Published: December 2025</p>
+          <p>Working on the follow-up to the instrumental album series...</p>
+        </article>
+      </div>
+    </section>
+    <section class="section">
+      <h2>Contact Me</h2>
+      <div class="content-block">
+        <form id="archiveContactForm" name="archiveContactForm" action="/api/contact" method="post" novalidate>
+          <div class="form-group">
+            <label class="label" for="archive-name">Your Name *</label>
+            <input class="input" type="text" id="archive-name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label class="label" for="archive-email">Your Email *</label>
+            <input class="input" type="email" id="archive-email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label class="label" for="archive-subject">Subject *</label>
+            <input class="input" type="text" id="archive-subject" name="subject" required>
+          </div>
+          <div class="form-group">
+            <label class="label" for="archive-message">Your Message *</label>
+            <textarea class="input" id="archive-message" name="message" rows="6" required></textarea>
+          </div>
+          <button class="button primary contact-button" type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><p>Rahi Da Fey | Guitar Player & Songwriter</p><p><a href="privacy-policy.html">Privacy Policy</a> <a href="return-refund.html">Return & Refund</a></p></footer>
+  <script src="assets/script.js"></script>
+</body>
+</html>

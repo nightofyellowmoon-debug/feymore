@@ -1,0 +1,19 @@
+{
+  "name": "rahi-da-fey-redesign",
+  "version": "1.0.0",
+  "description": "Official website of Rahi Da Fey - Guitar Player & Songwriter",
+  "scripts": {
+    "build": "echo 'Static site - no build required'",
+    "dev": "npx serve -p 3000",
+    "start": "npx serve"
+  },
+  "dependencies": {
+    "nodemailer": "^6.9.4"
+  },
+  "devDependencies": {
+    "serve": "^14.1.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
