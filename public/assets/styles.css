@@ -130,10 +130,13 @@ h3 { font-size: 1.25rem; }
 .blog-list { display: grid; gap: 28px; max-width: 1060px; margin: 0 auto; }
 .post, .policy-copy { padding: 28px; background: var(--white); border: 1px solid var(--line); border-radius: 8px; box-shadow: var(--shadow); }
 .full-post { display: grid; gap: 18px; }
+.full-post::after { content: ""; display: block; clear: both; }
 .post h2 { color: var(--orange-900); font-size: clamp(1.6rem, 3vw, 2.6rem); }
 .post p, .policy-copy p, .policy-copy li { color: var(--muted); }
 .post-meta, .signature { color: var(--orange-700); font-weight: 900; }
 .poem p { margin: 0 0 10px; }
+.post-image { width: 100%; max-width: 420px; margin: 14px auto; border: 6px solid var(--orange-500); border-radius: 8px; box-shadow: var(--shadow); }
+.post-image.float-right { float: right; max-width: 260px; margin: 6px 0 14px 20px; }
 .comment-form { display: grid; gap: 14px; margin-top: 14px; padding: 18px; background: var(--orange-100); border: 1px solid var(--line); border-radius: 8px; }
 .comment-form h3 { color: var(--orange-900); }
 .comment-form label { display: grid; gap: 7px; color: var(--ink); font-weight: 800; }
