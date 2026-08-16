@@ -5,9 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Shop | Rahi Da Fey</title>
   <meta name="description" content="Shop official music products from Rahi Da Fey with add to cart checkout and bank deposit payment instructions.">
-  
-  
-  
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
@@ -61,7 +58,12 @@
           Add items to cart to prepare your checkout message.
         </div>
         <button class="button primary" id="prepare-order" type="button">Prepare bank deposit order</button>
-        <form class="order-form" id="order-form" action="order-handler.php" accept-charset="UTF-8" method="post">
+        
+        <!-- FIXED ACTION AND METHOD BELOW -->
+        <form class="order-form" id="order-form" action="https://api.web3forms.com/submit" accept-charset="UTF-8" method="POST">
+          <!-- Web3Forms Key -->
+          <input type="hidden" name="access_key" value="f16b94c5-5d40-432a-b323-f9dd9ddc340d">
+          
           <input type="hidden" name="payment_message" value="In order to maintain transparency with norms and ensure a secure purchasing process, we have made arrangements for your payment to be received through this bank account in a manner that is convenient for you.">
           <input type="hidden" name="payment_details" value="Account Name: Md Ahsan Habib; Account Number: 0202220008114; Bank: Dhaka Bank PLC; Branch: CDA Avenue; Routing Number: 085151482; Swift Code: DHBLBDDH">
           <label>Name<input name="customer_name" type="text" autocomplete="name" required></label>
@@ -85,13 +87,10 @@
       <p><a href="return-refund.html">Read the Return & Refund Policy</a> before ordering.</p>
     </section>
   </main>
-  <footer class="site-footer"><p>Rahi Da Fey | Shop</p><p><a href="privacy-policy.html">Privacy Policy</a> <a href="return-refund.html">Return & Refund</a></p></footer>
+  <footer class="site-footer">
+    <p>Rahi Da Fey | Shop</p>
+    <p><a href="privacy-policy.html">Privacy Policy</a> <a href="return-refund.html">Return & Refund</a></p>
+  </footer>
   <script src="assets/script.js"></script>
 </body>
 </html>
-
-
-
-
-
-

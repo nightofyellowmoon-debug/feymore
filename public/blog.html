@@ -1,56 +1,176 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Blog | Rahi Da Fey</title>
+  <meta name="description" content="Full blog archive and writing by Rahi Da Fey.">
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
   <header class="site-header">
     <a class="brand" href="index.html"><span class="brand-mark">RF</span><span><strong>Rahi Da Fey</strong><small>Guitar Player & Songwriter</small></span></a>
     <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
-    <nav class="site-nav" aria-label="Primary navigation">
-      <a href="index.html">Home</a><a href="menu.html">Menu</a><a href="albums.html">Albums</a><a href="shop.html">Shop</a><a href="news.html">News</a><a href="blog.html">Blog</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="privacy-policy.html">Privacy</a><a href="return-refund.html">Refund</a>
-    </nav>
+    <nav class="site-nav" aria-label="Primary navigation"><a href="index.html">Home</a><a href="menu.html">Menu</a><a href="albums.html">Albums</a><a href="shop.html">Shop</a><a href="news.html">News</a><a href="blog.html">Blog</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="privacy-policy.html">Privacy</a><a href="return-refund.html">Refund</a></nav>
   </header>
+
+  <section class="top-slideshow" aria-label="Featured images slideshow"><img class="slideshow-image" src="assets/slides/slide-01.jpg" alt="Featured music artwork" data-slides="assets/slides/slide-01.jpg,assets/slides/slide-02.jpg,assets/slides/slide-03.jpg,assets/slides/slide-04.jpg,assets/slides/slide-05.jpg,assets/slides/slide-06.jpg,assets/slides/slide-07.jpg,assets/slides/slide-08.jpg,assets/slides/slide-09.jpg,assets/slides/slide-10.jpg,assets/slides/slide-11.jpg,assets/slides/slide-12.jpg"></section>
+
   <main>
-    <section class="section">
-      <h1>Blog</h1>
-      <div class="blog-posts">
-        <article class="blog-post">
-          <h2>Latest Studio Update</h2>
-          <p>Working on a new instrumental album with neoclassical influences...</p>
-          <a href="blog-archive.html">Read more</a>
-        </article>
-      </div>
+    <section class="page-hero compact">
+      <p class="eyebrow">Blog Archive</p>
+      <h1>Full Posts & Comments</h1>
+      <p class="lead">Complete posts from the old website, with a comment box under every entry.</p>
     </section>
-    <section class="section">
-      <h2>Contact Me</h2>
-      <div class="content-block">
-        <form id="blogContactForm" name="blogContactForm" action="/api/contact" method="post" novalidate>
-          <div class="form-group">
-            <label class="label" for="blog-name">Your Name *</label>
-            <input class="input" type="text" id="blog-name" name="name" required>
-          </div>
-          <div class="form-group">
-            <label class="label" for="blog-email">Your Email *</label>
-            <input class="input" type="email" id="blog-email" name="email" required>
-          </div>
-          <div class="form-group">
-            <label class="label" for="blog-subject">Subject *</label>
-            <input class="input" type="text" id="blog-subject" name="subject" required>
-          </div>
-          <div class="form-group">
-            <label class="label" for="blog-message">Your Message *</label>
-            <textarea class="input" id="blog-message" name="message" rows="6" required></textarea>
-          </div>
-          <button class="button primary contact-button" type="submit">Send Message</button>
+
+    <section class="section blog-list">
+      
+      <!-- Article 1 -->
+      <article class="post full-post">
+        <p class="post-meta">Weary Sphere | Chapter #2 | 14.04.2024</p>
+        <h2>Full moon, alone</h2>
+        <div class="poem">
+          <p>In a blue full moon, alone</p>
+          <p>The night of shivering wind drift away whistling</p>
+          <p>And the pain and exhaustion drawn into eyes</p>
+          <p>Confused in the dark shadow, wayward in the illusion of the way</p>
+          <p>Staring at the deep blue with two eyes</p>
+          <p>One little, fade, innocent face,</p>
+          <p>Or blue dream of the street with the shadow of amber light</p>
+          <p>This sky full of stars is like scars of a night covered with mist.</p>
+          <p>And the lost tune might drift into this shadowscape street,</p>
+          <p>The heart of the edge of illusion covered with silver mist,</p>
+          <p>Silent breaks when a nocturnal bird calls</p>
+          <p>like dew drops in the soft, wet grass.</p>
+          <p>Staring at the deep blue with two eyes</p>
+          <p>One little, fade, innocent face,</p>
+          <p>Or blue dream of the street with the shadow of amber light</p>
+          <p>This sky full of stars is like scars of a night covered with mist.</p>
+          <p>Night in a far away street, cold and alone</p>
+          <p>In a blue crescent with alone, bare alone moon,</p>
+          <p>Kiss of the light of amber at the grey black street</p>
+          <p>In a sleeping city of silent night, alone.</p>
+          <p>Staring at the deep blue with two eyes</p>
+          <p>One little, fade, innocent face</p>
+          <p>Or blue dream of the street with the shadow of amber light</p>
+          <p>This sky full of stars is like scars of a night covered with mist.</p>
+          <p class="signature">- Rahi<br>14.04.2024</p>
+        </div>
+        <form class="comment-form" action="https://api.web3forms.com/submit" accept-charset="UTF-8" method="POST">
+          <input type="hidden" name="access_key" value="f16b94c5-5d40-432a-b323-f9dd9ddc340d">
+          <input type="hidden" name="post_title" value="Full moon, alone">
+          <h3>Leave a comment</h3>
+          <label>Name<input name="name" type="text" required></label>
+          <label>Email<input name="email" type="email" required></label>
+          <label>Comment<textarea name="comment" rows="5" required></textarea></label>
+          <button class="button primary" type="submit">Submit comment</button>
         </form>
-      </div>
+      </article>
+
+      <!-- Article 2 -->
+      <article class="post full-post">
+        <p class="post-meta">25/06/2023</p>
+        <h2>These Never ending Phrases</h2>
+        <div class="poem">
+          <p>These Never ending Phrases,</p>
+          <p>These never ending rhymes</p>
+          <p>If it stops yet ever</p>
+          <p>I Know you'll also</p>
+          <p>You'll also forget about me I know</p>
+          <p>These Never ending Phrases,</p>
+          <p>These never ending rhymes.</p>
+          <p>Sang that song too</p>
+          <p>Where you mended your soul</p>
+          <p>Nothing to regret to</p>
+          <p>Whatever I forgot to</p>
+          <p>I lost everything some time</p>
+          <p>I lost everything some time</p>
+          <p>You'll also forget about me I know.</p>
+          <p>These Never ending Phrases,</p>
+          <p>These never ending rhymes</p>
+          <p>If it stops yet ever</p>
+          <p>I Know you'll also</p>
+          <p>You'll also forget about me I know.</p>
+          <p class="signature">- Subir Sen (1957)<br>Courtesy # Rahi Da Fey</p>
+        </div>
+        <form class="comment-form" action="https://api.web3forms.com/submit" accept-charset="UTF-8" method="POST">
+          <input type="hidden" name="access_key" value="f16b94c5-5d40-432a-b323-f9dd9ddc340d">
+          <input type="hidden" name="post_title" value="These Never ending Phrases">
+          <h3>Leave a comment</h3>
+          <label>Name<input name="name" type="text" required></label>
+          <label>Email<input name="email" type="email" required></label>
+          <label>Comment<textarea name="comment" rows="5" required></textarea></label>
+          <button class="button primary" type="submit">Submit comment</button>
+        </form>
+      </article>
+
+      <!-- Article 3 -->
+      <article class="post full-post">
+        <p class="post-meta">Lost in a distant region | Chapter #1 | 16/04/2020</p>
+        <h2>Ancient Lullaby</h2>
+        <div class="poem">
+          <p>Are You a monster?</p>
+          <p>Are you a freak?</p>
+          <p>Will you be my friend!</p>
+          <p>Or have you lost your way.</p>
+          <p>With troubles to pay,</p>
+          <p>When you come to your Journey's end?</p>
+          <p class="signature">- Collected</p>
+        </div>
+        <form class="comment-form" action="https://web3forms.com" accept-charset="UTF-8" method="POST">
+          <input type="hidden" name="access_key" value="f16b94c5-5d40-432a-b323-f9dd9ddc340d">
+          <input type="hidden" name="post_title" value="Ancient Lullaby">
+          <h3>Leave a comment</h3>
+          <label>Name<input name="name" type="text" required></label>
+          <label>Email<input name="email" type="email" required></label>
+          <label>Comment<textarea name="comment" rows="5" required></textarea></label>
+          <button class="button primary" type="submit">Submit comment</button>
+        </form>
+      </article>
+
+      <!-- Article 4 -->
+      <article class="post full-post">
+        <p class="post-meta">Weary Sphere | Chapter #4 | 16/04/2020</p>
+        <h2>Edge of illusion</h2>
+        <div class="poem">
+          <p>This haze wet bloodred dusk</p>
+          <p>And the exotic bird floating matching the wings</p>
+          <p>This shadowbound soft walk</p>
+          <p>This loved city in evening's dress</p>
+          <p>This shadowbound green edges</p>
+          <p>Bloodred colorscheme venting the trees</p>
+          <p>Is this all just illusion?</p>
+          <p>When the red sun set with</p>
+          <p>In the crowd of peoples coming home with cheers</p>
+          <p>Silver moon rises in the vent of</p>
+          <p>The tree shedding leaves</p>
+          <p>This street with the shade of amber light</p>
+          <p>Calm, Dreambound</p>
+          <p>With the game between light and dark</p>
+          <p>starts the quiet night</p>
+          <p>This dew wet soft sky</p>
+          <p>All is just illusion. Just illusion.</p>
+          <p class="signature">- Rahi</p>
+        </div>
+        <form class="comment-form" action="https://api.web3forms.com/submit" accept-charset="UTF-8" method="POST">
+          <input type="hidden" name="access_key" value="f16b94c5-5d40-432a-b323-f9dd9ddc340d">
+          <input type="hidden" name="post_title" value="Edge of illusion">
+          <h3>Leave a comment</h3>
+          <label>Name<input name="name" type="text" required></label>
+          <label>Email<input name="email" type="email" required></label>
+          <label>Comment<textarea name="comment" rows="5" required></textarea></label>
+          <button class="button primary" type="submit">Submit comment</button>
+        </form>
+      </article>
+
     </section>
   </main>
-  <footer class="site-footer"><p>Rahi Da Fey | Guitar Player & Songwriter</p><p><a href="privacy-policy.html">Privacy Policy</a> <a href="return-refund.html">Return & Refund</a></p></footer>
+
+  <footer class="site-footer">
+    <p>Rahi Da Fey | Blog</p>
+    <p><a href="privacy-policy.html">Privacy Policy</a> <a href="return-refund.html">Return & Refund</a></p>
+  </footer>
+  
   <script src="assets/script.js"></script>
 </body>
 </html>

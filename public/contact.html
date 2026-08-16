@@ -1,46 +1,20 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Contact | Rahi Da Fey</title>
-  <link rel="stylesheet" href="assets/styles.css">
-</head>
-<body>
-  <header class="site-header">
-    <a class="brand" href="index.html"><span class="brand-mark">RF</span><span><strong>Rahi Da Fey</strong><small>Guitar Player & Songwriter</small></span></a>
-    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
-    <nav class="site-nav" aria-label="Primary navigation">
-      <a href="index.html">Home</a><a href="menu.html">Menu</a><a href="albums.html">Albums</a><a href="shop.html">Shop</a><a href="news.html">News</a><a href="blog.html">Blog</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="privacy-policy.html">Privacy</a><a href="return-refund.html">Refund</a>
-    </nav>
-  </header>
-  <main>
-    <section class="section">
-      <h1>Contact Us</h1>
-      <div class="content-block">
-        <form id="contactForm" name="contactForm" action="/api/contact" method="post" novalidate>
-          <div class="form-group">
-            <label class="label" for="name">Your Name *</label>
-            <input class="input" type="text" id="name" name="name" required>
-          </div>
-          <div class="form-group">
-            <label class="label" for="email">Your Email *</label>
-            <input class="input" type="email" id="email" name="email" required>
-          </div>
-          <div class="form-group">
-            <label class="label" for="subject">Subject *</label>
-            <input class="input" type="text" id="subject" name="subject" required>
-          </div>
-          <div class="form-group">
-            <label class="label" for="message">Your Message *</label>
-            <textarea class="input" id="message" name="message" rows="6" required></textarea>
-          </div>
-          <button class="button primary contact-button" type="submit">Send Message</button>
-        </form>
-      </div>
-    </section>
-  </main>
-  <footer class="site-footer"><p>Rahi Da Fey | Guitar Player & Songwriter</p><p><a href="privacy-policy.html">Privacy Policy</a> <a href="return-refund.html">Return & Refund</a></p></footer>
-  <script src="assets/script.js"></script>
-</body>
-</html>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Contact | Rahi Da Fey</title><meta name="description" content="Contact Rahi Da Fey."><link rel="stylesheet" href="assets/styles.css"></head>
+<body><header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">RF</span><span><strong>Rahi Da Fey</strong><small>Guitar Player & Songwriter</small></span></a><button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button><nav class="site-nav" aria-label="Primary navigation"><a href="index.html">Home</a><a href="menu.html">Menu</a><a href="albums.html">Albums</a><a href="shop.html">Shop</a><a href="news.html">News</a><a href="blog.html">Blog</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="privacy-policy.html">Privacy</a><a href="return-refund.html">Refund</a></nav></header>
+<section class="top-slideshow" aria-label="Featured images slideshow"><img class="slideshow-image" src="assets/slides/slide-01.jpg" alt="Featured music artwork" data-slides="assets/slides/slide-01.jpg,assets/slides/slide-02.jpg,assets/slides/slide-03.jpg,assets/slides/slide-04.jpg,assets/slides/slide-05.jpg,assets/slides/slide-06.jpg,assets/slides/slide-07.jpg,assets/slides/slide-08.jpg,assets/slides/slide-09.jpg,assets/slides/slide-10.jpg,assets/slides/slide-11.jpg,assets/slides/slide-12.jpg"></section><main><section class="page-hero compact"><p class="eyebrow">Contact</p><h1>Get in touch</h1></section><section class="section contact-section"><div class="contact-panel"><h2>Contact Details</h2><p><strong>Email</strong><br><span>holklonote@gmail.com</span></p><p><strong>Telephone</strong><br><a href="tel:+8801830376581">+8801830376581</a><br><a href="tel:+8801719119119">+8801719119119</a></p><p><strong>Address</strong><br>House # 10, Road # 10, Block # B, Chandgaon R/A, Chittagong, Bangladesh.</p></div>
+
+<!-- FIXED THE ACTION URL LINE BELOW -->
+<form class="contact-form" action="https://api.web3forms.com/submit" accept-charset="UTF-8" method="POST">
+    <!-- Web3Forms Key -->
+    <input type="hidden" name="access_key" value="f16b94c5-5d40-432a-b323-f9dd9ddc340d">
+    
+    <label>Name<input name="name" type="text" autocomplete="name" required></label>
+    <label>Email<input name="email" type="email" autocomplete="email" required></label>
+    <label>Message<textarea name="message" rows="7" required></textarea></label>
+    <button class="button primary" type="submit">Send message</button>
+</form>
+
+</section></main>
+<footer class="site-footer"><p>Rahi Da Fey | Contact</p><p><a href="privacy-policy.html">Privacy Policy</a> <a href="return-refund.html">Return & Refund</a></p></footer><script src="assets/script.js"></script></body></html>
+
