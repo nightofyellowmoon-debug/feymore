@@ -33,24 +33,12 @@
     <section class="section">
       <h2>Contact Me</h2>
       <div class="content-block">
-        <form id="archiveContactForm" name="archiveContactForm" action="/api/contact" method="post" novalidate>
-          <div class="form-group">
-            <label class="label" for="archive-name">Your Name *</label>
-            <input class="input" type="text" id="archive-name" name="name" required>
-          </div>
-          <div class="form-group">
-            <label class="label" for="archive-email">Your Email *</label>
-            <input class="input" type="email" id="archive-email" name="email" required>
-          </div>
-          <div class="form-group">
-            <label class="label" for="archive-subject">Subject *</label>
-            <input class="input" type="text" id="archive-subject" name="subject" required>
-          </div>
-          <div class="form-group">
-            <label class="label" for="archive-message">Your Message *</label>
-            <textarea class="input" id="archive-message" name="message" rows="6" required></textarea>
-          </div>
-          <button class="button primary contact-button" type="submit">Send Message</button>
+        <form class="contact-form" action="https://api.web3forms.com/submit" accept-charset="UTF-8" method="POST">
+          <input type="hidden" name="access_key" value="f16b94c5-5d40-432a-b323-f9dd9ddc340d">
+          <label>Name<input name="name" type="text" autocomplete="name" required></label>
+          <label>Email<input name="email" type="email" autocomplete="email" required></label>
+          <label>Message<textarea name="message" rows="7" required></textarea></label>
+          <button class="button primary" type="submit">Send message</button>
         </form>
       </div>
     </section>
